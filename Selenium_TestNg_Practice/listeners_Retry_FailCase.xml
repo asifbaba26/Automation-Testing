@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Listeners Retry Fail Scenario">
+	<listeners>
+		<listener class-name="common.datasetup.Listener_TestFail_Retry"></listener>
+	</listeners>
+	<test thread-count="5" name="Listeners Test Take Fail Screenshot">
+		<classes>
+			<class name="com.testng.listners.BrowserLaunch_Listeners_RetryFailCase" />
+		</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
